@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+<body>
+<script>
+    var num = Number(window.prompt("Digite um valor:"))
+
+    var slot1 = 0;  
+    var slot2 = 1;
+    var proxNum = 0;
+
+    while (num > proxNum){
+        proxNum = slot1 + slot2;
+        slot1 = slot2;
+        slot2 = proxNum;
+        console.log(proxNum);
+    }
+
+    if (proxNum == num){
+        window.alert(`${proxNum} pertence a sequencia.`)
+    }else{
+        window.alert(`${num} nao faz parte da sequencia.`)
+    }
+</script>
+</body>
+</html>
